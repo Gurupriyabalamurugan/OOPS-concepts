@@ -2,6 +2,9 @@ class Shape{
     void draw(){
         System.out.println("Drawing a shape");
     }
+    void draw(String s){ //overloading
+        System.out.println("Drawing and colouring with " + s);
+    }
 }
 class Circle extends Shape{
     void draw(){
@@ -20,5 +23,6 @@ public class Main{
         s.draw();
         s=new Rectangle();
         s.draw();
+        s.draw("yellow");
     }
 }
