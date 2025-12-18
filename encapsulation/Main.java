@@ -2,10 +2,10 @@ class Student{
     private String name;   // hidden 
     private int age;
     public void setName(String n){
-        name = n;
+        name=n;
     }
     public void setAge(int a){
-        age = a;
+        age=a;
     }
     public String getName(){ 
         return name;
