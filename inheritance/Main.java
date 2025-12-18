@@ -1,31 +1,36 @@
 class Kingdom{
-  void leg():
+  void leg(){
   System.out.println("4 legs are predominant");
 }
-  
+}
 class Animal extends Kingdom{ //single
-  void eat();
+  void eat(){
   System.out.println("Animals eat food");
 }
+}
 class Dog extends Animal{ //multilevel
-  void bark();
+  void bark(){
   System.out.println("Dogs usually bark");
 }
+}
 class Cat extends Animal {
-  void meow();
+  void meow(){
   System.out.println("Cats meow");
 }
+}
 class Bird extends Animal{
-  void fly();
-  System.out.ptintln("Birds fly");
+  void fly(){
+  System.out.println("Birds fly");
+}
 }
 interface Newpet{
   void play();
-}
+  }
 
 class Puppydog extends Dog implements Newpet{//multiple by interface
-  void play();
+  public void play(){
   System.out.println("Puppy plays well");
+}
 }
 public class Main{
   public static void main(String[] args){
