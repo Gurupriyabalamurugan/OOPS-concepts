@@ -1,5 +1,7 @@
-abstract class Bike{
-  abstract void runs(); //method
+interface Rideable{
+  void runs();
+}
+abstract class Bike implements Rideable{
   void fuel(){
     System.out.println("Fuel is needed for bikes");
 }
