@@ -1,10 +1,14 @@
 class Kingdom{
-  void leg(){
+  protected void leg(){
   System.out.println("4 legs are predominant");
+}
+  //static
+  static void classification(){
+    System.out.println("Living beings are classified");
 }
 }
 class Animal extends Kingdom{ //single
-  void eat(){
+  final void eat(){
   System.out.println("Animals eat food");
 }
 }
@@ -34,9 +38,12 @@ class Puppydog extends Dog implements Newpet{//multiple by interface
 }
 public class Main{
   public static void main(String[] args){
+
+    //static call
+    Kingdom.classification();
     Dog d=new Dog();
-    d.leg();
-    d.eat();
+    d.leg(); //protected
+    d.eat(); //final
     d.bark();
 
     Cat c=new Cat();
