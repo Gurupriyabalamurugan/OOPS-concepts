@@ -8,6 +8,9 @@ public class Test{
         throw new Exception("Age below 18 is not eligible to vote");
       System.out.println("Allowed to vote");
     }
+    catch(InputMismatchException e){
+      System.out.println("Enter valid data");
+    }
     catch(Exception e){
       System.out.println(e.getMessage());
     }
